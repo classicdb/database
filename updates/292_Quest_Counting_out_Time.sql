@@ -1,7 +1,7 @@
 -- File:	SQL
 -- Name:	292_Quest_Counting_out_Time
 -- Desc:	Corrections Quests Counting out Time (making repeatable)
--- Auth:	Shubu
+-- Auth:	Tobschinski
 -- Date:	2014/03/06
 
 -- -------------------------------------------------------------------------
