@@ -1,7 +1,7 @@
 -- File:	SQL
--- Name:	298_Craftsman's_Writ_-_Miscellaneous 
+-- Name:	298_Craftsman's_Writ_-_Miscellaneous
 -- Desc:	Corrections to Craftsman's_Writs Quests (rep, repeatable, minlvl)
--- Auth:	Shubu
+-- Auth:	Tobschinski
 -- Date:	2014/03/06
 
 -- -------------------------------------------------------------------------

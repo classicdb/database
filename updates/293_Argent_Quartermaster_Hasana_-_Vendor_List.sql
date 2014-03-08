@@ -1,5 +1,5 @@
 -- File:	SQL
--- Name:	293_Argent_Quartermaster_Hasana_-_Vendor_List 
+-- Name:	293_Argent_Quartermaster_Hasana_-_Vendor_List
 -- Desc:	Corrections to Argent Quartermaster Hasana' Vendor List (remove Major Mana and Healing Potions)
 -- Auth:	Tobschinski
 -- Date:	2014/03/08
