@@ -1,0 +1,42 @@
+
+SET @POOL := '25405';
+
+DELETE FROM `pool_template` WHERE `entry` BETWEEN @POOL + 0 AND @POOL + 36;
+
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 0, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 1, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 2, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 3, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 4, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 5, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 6, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 7, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 8, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 9, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 10, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 11, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 12, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 13, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 14, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 15, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 16, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 17, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 18, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 19, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 20, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 21, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 22, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 23, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 24, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 25, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 26, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 27, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 28, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 29, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 30, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 31, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 32, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 33, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 34, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 35, '1', 'MC - Firelord / Lava Annihilator');
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (@POOL + 36, '1', 'MC - Firelord / Lava Annihilator');
