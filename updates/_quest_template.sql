@@ -1229,3 +1229,14 @@ UPDATE `quest_template` SET `RewMoneyMaxLevel`='4230' WHERE `entry`='7507';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='8948';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='8949';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='8950';
+
+-- EDIT
+UPDATE `quest_template` SET `MinLevel`='12', `QuestLevel`='60' WHERE `entry`='7826';
+UPDATE `quest_template` SET `MinLevel`='12', `QuestLevel`='60' WHERE `entry`='7833';
+UPDATE `quest_template` SET `MinLevel`='26', `QuestLevel`='60' WHERE `entry`='7827';
+UPDATE `quest_template` SET `MinLevel`='26', `QuestLevel`='60' WHERE `entry`='7834';
+UPDATE `quest_template` SET `QuestLevel`='60' WHERE `entry`='7831';
+UPDATE `quest_template` SET `QuestLevel`='60' WHERE `entry`='7835';
+UPDATE `quest_template` SET `QuestLevel`='60' WHERE `entry`='7824';
+UPDATE `quest_template` SET `QuestLevel`='60' WHERE `entry`='7836';
+UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='7823';
