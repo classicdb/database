@@ -1324,3 +1324,15 @@ UPDATE`quest_template` SET `rewmoneymaxlevel`='330' WHERE `entry`='8466';
 UPDATE`quest_template` SET `rewmoneymaxlevel`='330' WHERE `entry`='8467';
 UPDATE`quest_template` SET `rewmoneymaxlevel`='330' WHERE `entry`='8469';
 UPDATE`quest_template` SET `rewmoneymaxlevel`='3390' WHERE `entry`='8470';
+
+-- EDIT 3
+UPDATE `quest_template` SET `rewmoneymaxlevel`='2520' WHERE `entry`='4103';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='2520' WHERE `entry`='4104';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='2520' WHERE `entry`='4105';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='2520' WHERE `entry`='4106';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='2520' WHERE `entry`='4107';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='0' WHERE `entry`='5888';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='0' WHERE `entry`='5889';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='0' WHERE `entry`='5890';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='0' WHERE `entry`='5891';
+UPDATE `quest_template` SET `rewmoneymaxlevel`='0' WHERE `entry`='5887';
