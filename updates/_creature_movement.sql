@@ -1,5 +1,7 @@
 SET @GUID := '550000';
 
+-- -------------------
+
 DELETE FROM `creature_movement` WHERE `id`=@GUID + 0;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (@GUID + 0, '01', '-9654.327', '1587.958', '21.51131', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
