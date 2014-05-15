@@ -1,5 +1,7 @@
 SET @POOL := '25444';
 
+-- ------------------
+
 DELETE FROM `pool_template` WHERE `entry` BETWEEN @POOL AND @POOL + 7;
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
