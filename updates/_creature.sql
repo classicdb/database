@@ -1,4 +1,4 @@
-SET @GUID := '700000';
+SET @GUID := '700000'; -- 30 creatures needed
 
 -- -------------------
 
