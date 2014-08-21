@@ -152,7 +152,7 @@ then
       echo "Apply core updates from milestone $NEXT_MILESTONE"
       for f in ${CORE_PATH}/sql/updates/${NEXT_MILESTONE}/z*_*_*_*_mangos_*.sql
       do
-        CUR_REV=`basename $f | sed 's/^\([0-9]*\)_.*/\1/' `
+        CUR_REV=`basename $f | sed -r 's/^([0-9]*)_.*/\1/' `
         if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
         then
           # found a newer core update file
@@ -167,7 +167,7 @@ then
   # Apply remaining files from main folder
   for f in $CORE_PATH/sql/updates/*_*_mangos_*.sql
   do
-    CUR_REV=`basename $f | sed 's/^\z([0-9]*)_.*/\1/' `
+    CUR_REV=`basename $f | sed -r 's/^\z([0-9]*)_.*/\1/' `
     if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
     then
       # found a newer core update file
@@ -192,7 +192,7 @@ then
       echo "Apply SD2 updates from milestone $NEXT_SD2_MILESTONE"
       for f in ${CORE_PATH}/src/bindings/ScriptDev2/sql/updates/${NEXT_SD2_MILESTONE}/r*_mangos.sql
       do
-        CUR_REV=`basename $f | sed 's/^r\([0-9]*\)_mangos.sql/\1/' `
+        CUR_REV=`basename $f | sed -r 's/^r([0-9]*)_mangos.sql/\1/' `
         if [ "$CUR_REV" -gt "$LAST_SD2_REV" ]
         then
           # found a newer core update file
@@ -207,7 +207,7 @@ then
   # Apply remaining files from main folder
   for f in $CORE_PATH/src/bindings/ScriptDev2/sql/updates/r*_mangos.sql
   do
-    CUR_REV=`basename $f | sed 's/^r\([0-9]*\)_mangos.sql/\1/' `
+    CUR_REV=`basename $f | sed -r 's/^r([0-9]*)_mangos.sql/\1/' `
     if [ "$CUR_REV" -gt "$LAST_SD2_REV" ]
     then
       # found a newer core update file
