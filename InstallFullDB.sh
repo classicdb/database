@@ -113,18 +113,22 @@ $MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_6_5_z2683.sql
 
 ## Updates
 echo "Process database updates"
-if [ ! -e ${ADDITIONAL_PATH}updates/[0-9]*.sql ]
-then
-    echo "   No update to process"
-else
-    for UPDATE in ${ADDITIONAL_PATH}updates/[0-9]*.sql
-    do
-        echo "   process update $UPDATE"
-        $MYSQL_COMMAND < $UPDATE
-        [[ $? != 0 ]] && exit 1
-    done
-    echo "Updates applied"
-fi
+for UPDATEFILE in ${ADDITIONAL_PATH}updates/[0-9]*.sql
+do
+    if [ -e "$UPDATEFILE" ]
+    then
+        for UPDATE in ${ADDITIONAL_PATH}updates/[0-9]*.sql
+        do
+            echo "   process update $UPDATE"
+            $MYSQL_COMMAND < $UPDATE
+            [[ $? != 0 ]] && exit 1
+        done
+        echo "Updates applied"
+    else
+        echo "   No update to process"
+    fi
+    break
+done
 
 LAST_CORE_REV="2683"
 # process future release folders
