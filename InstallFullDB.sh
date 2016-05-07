@@ -170,23 +170,16 @@ then
   done
 
   # Apply remaining files from main folder
-  for UPDATEFILE in ${CORE_PATH}/sql/updates/mangos/z*_*_mangos_*.sql
+  for f in $CORE_PATH/sql/updates/mangos/z*_*_mangos_*.sql
   do
-    if [ -e "$UPDATEFILE" ]
+    CUR_REV=`basename $f | sed 's/^\z\([0-9]*\)_.*/\1/' `
+    if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
     then
-      for f in ${CORE_PATH}/sql/updates/mangos/z*_*_mangos_*.sql
-      do
-        CUR_REV=`basename $f | sed 's/^\z\([0-9]*\)_.*/\1/' `
-        if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
-        then
-          # found a newer core update file
-          echo "Append core update `basename $f` to database DATABASE"
-        fi
-      done
-    else
-      echo "No core updates found at path ${CORE_PATH}/sql/updates/mangos"
+      # found a newer core update file
+      echo "Append core update `basename $f` to database $DATABASE"
+      $MYSQL_COMMAND < $f
+      [[ $? != 0 ]] && exit 1
     fi
-    break
   done
   echo "All core updates applied"
 fi
