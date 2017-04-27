@@ -1,0 +1,2 @@
+-- Fiora Longears (4456) moved back to Theramore from Auberdine. Moved in 2.3.0 --
+UPDATE creature SET position_x = '-3613.427734', position_y = '-4463.895020', position_z = '13.622666', orientation = '2.975219' WHERE guid = '37087';
